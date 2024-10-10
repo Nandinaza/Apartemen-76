@@ -247,11 +247,54 @@ layout_mode = 2
 layout_mode = 2
 text = "close"
 
-[node name="Character_selestion" type="Control" parent="."]
-layout_mode = 3
+[node name="Character_selection" type="Control" parent="Mainmenu"]
+visible = false
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Mainmenu/Character_selection"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 575.0
+offset_top = 90.0
+offset_right = -57.0
+offset_bottom = -273.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Mainmenu/Character_selection/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Nandi"
+
+[node name="Left" type="TextureButton" parent="Mainmenu/Character_selection"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 597.0
+offset_top = 501.0
+offset_right = -517.0
+offset_bottom = -116.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Right" type="TextureButton" parent="Mainmenu/Character_selection"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1022.0
+offset_top = 508.0
+offset_right = -92.0
+offset_bottom = -109.0
 grow_horizontal = 2
 grow_vertical = 2
 

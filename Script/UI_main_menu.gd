@@ -27,3 +27,7 @@ func _on_play_pressed():
 		animation.play("camera_move")
 	else:
 		animation.play_backwards("camera_move")
+
+
+func _on_touch_screen_button_pressed():
+	_on_settting_pressed()

@@ -13,13 +13,21 @@ config_version=5
 config/name="Apartemen_76"
 run/main_scene="res://main_menu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://Texture/Logo/app_logo.png"
+
+[autoload]
+
+AudioVariable="*res://Audio/Audio_Variable.gd"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/zylann.hterrain/plugin.cfg")
 
 [filesystem]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cndo2608peekr"]
+[gd_scene load_steps=23 format=3 uid="uid://cndo2608peekr"]
 
 [ext_resource type="Texture2D" uid="uid://7fel2y7xppwo" path="res://Texture/UI_interface/Button_normal.png" id="1_asxoi"]
 [ext_resource type="Script" path="res://Script/UI_main_menu.gd" id="1_hl8g5"]
@@ -7,6 +7,10 @@
 [ext_resource type="Material" uid="uid://bfxoul6sym24f" path="res://Texture/Image_texture/Wall/main_menu.tres" id="4_aaro7"]
 [ext_resource type="Texture2D" uid="uid://bcwe55isclves" path="res://Texture/Image_texture/Florr/brown_mud/brown_mud_03_diff_1k.jpg" id="4_ymd2u"]
 [ext_resource type="Texture2D" uid="uid://pv50qr8spd4s" path="res://Texture/Image_texture/Florr/brown_mud/brown_mud_03_spec_1k.png" id="5_6ojbg"]
+[ext_resource type="Script" path="res://Script/men/BGM.gd" id="8_1dtas"]
+[ext_resource type="AudioStream" uid="uid://b1y00d1uubfx5" path="res://Audio/Burning_fire_bgm.mp3" id="8_ncuih"]
+[ext_resource type="Script" path="res://Script/men/Character_selection.gd" id="9_fmvop"]
+[ext_resource type="Texture2D" uid="uid://di20fax0book3" path="res://Texture/UI_interface/anak_panah.png" id="9_lcdmf"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fauyj"]
 emission_enabled = true
@@ -163,6 +167,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Judul Game" type="RichTextLabel" parent="Mainmenu"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -178,6 +183,7 @@ theme_override_font_sizes/normal_font_size = 125
 text = "Apartemen 76"
 
 [node name="button" type="VBoxContainer" parent="Mainmenu"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -235,11 +241,14 @@ text = "Sound effect"
 [node name="HBoxContainer2" type="VBoxContainer" parent="Mainmenu/setting_menu"]
 layout_mode = 2
 
-[node name="HScrollBar" type="HScrollBar" parent="Mainmenu/setting_menu/HBoxContainer2"]
+[node name="BGM" type="HScrollBar" parent="Mainmenu/setting_menu/HBoxContainer2"]
 custom_minimum_size = Vector2(250, 30)
 layout_mode = 2
+min_value = -5.0
+max_value = 10.0
+script = ExtResource("8_1dtas")
 
-[node name="HScrollBar2" type="HScrollBar" parent="Mainmenu/setting_menu/HBoxContainer2"]
+[node name="SFX" type="HScrollBar" parent="Mainmenu/setting_menu/HBoxContainer2"]
 custom_minimum_size = Vector2(250, 30)
 layout_mode = 2
 
@@ -248,13 +257,13 @@ layout_mode = 2
 text = "close"
 
 [node name="Character_selection" type="Control" parent="Mainmenu"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("9_fmvop")
 
 [node name="Panel" type="Panel" parent="Mainmenu/Character_selection"]
 layout_mode = 2
@@ -265,38 +274,77 @@ offset_top = 90.0
 offset_right = -57.0
 offset_bottom = -273.0
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Mainmenu/Character_selection/Panel"]
+[node name="Character_name" type="RichTextLabel" parent="Mainmenu/Character_selection/Panel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 70.0
+offset_top = 33.0
+offset_right = -36.0
+offset_bottom = -214.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("3_we35t")
+theme_override_font_sizes/normal_font_size = 100
 text = "Nandi"
+
+[node name="Description" type="RichTextLabel" parent="Mainmenu/Character_selection/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = 164.0
+offset_right = -43.0
+offset_bottom = -38.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "as"
 
 [node name="Left" type="TextureButton" parent="Mainmenu/Character_selection"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 597.0
-offset_top = 501.0
-offset_right = -517.0
-offset_bottom = -116.0
+offset_left = 647.0
+offset_top = 498.0
+offset_right = -461.0
+offset_bottom = -40.0
 grow_horizontal = 2
 grow_vertical = 2
+texture_normal = ExtResource("9_lcdmf")
+ignore_texture_size = true
+stretch_mode = 0
+flip_h = true
 
-[node name="Right" type="TextureButton" parent="Mainmenu/Character_selection"]
+[node name="right" type="TextureButton" parent="Mainmenu/Character_selection"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1022.0
-offset_top = 508.0
-offset_right = -92.0
-offset_bottom = -109.0
+offset_left = 995.0
+offset_top = 503.0
+offset_right = -113.0
+offset_bottom = -35.0
 grow_horizontal = 2
 grow_vertical = 2
+texture_normal = ExtResource("9_lcdmf")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ok" type="TextureButton" parent="Mainmenu/Character_selection"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 193.0
+offset_top = 546.0
+offset_right = -957.0
+offset_bottom = -44.0
+texture_normal = ExtResource("9_lcdmf")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.901956, -0.0734072, -0.425543, 0.0334928, 0.994369, -0.100542, 0.430527, 0.0764317, 0.899336, -1.98792, 1.29094, -1.24585)
@@ -323,7 +371,14 @@ libraries = {
 "": SubResource("AnimationLibrary_7m7ud")
 }
 
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.02297, 2.04548, -3.10659)
+stream = ExtResource("8_ncuih")
+
 [connection signal="pressed" from="Mainmenu/button/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Mainmenu/button/settting" to="." method="_on_settting_pressed"]
 [connection signal="pressed" from="Mainmenu/button/exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="Mainmenu/setting_menu/HBoxContainer2/Button" to="." method="_on_settting_pressed"]
+[connection signal="pressed" from="Mainmenu/Character_selection/Left" to="Mainmenu/Character_selection" method="_on_left_pressed"]
+[connection signal="pressed" from="Mainmenu/Character_selection/right" to="Mainmenu/Character_selection" method="_on_right_pressed"]
+[connection signal="pressed" from="Mainmenu/Character_selection/ok" to="." method="_on_ok_pressed"]

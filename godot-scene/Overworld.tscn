@@ -1,0 +1,123 @@
+[gd_scene load_steps=17 format=3 uid="uid://bhcd16w4ty65a"]
+
+[ext_resource type="PackedScene" uid="uid://7tou7x6e8gik" path="res://addons/Prefab/Player_base.tscn" id="1_j5r38"]
+[ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_jleaa"]
+[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="2_4c2tx"]
+[ext_resource type="Resource" path="res://addons/zylann.hterrain/data.hterrain" id="2_ckm8f"]
+[ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain_texture_set.gd" id="3_51lqq"]
+[ext_resource type="Texture2D" uid="uid://7hag2jx7s81o" path="res://godot-scene/Overworld_slot0_albedo_bump.png" id="6_ebksv"]
+[ext_resource type="Texture2D" uid="uid://bikulx8wfgwnn" path="res://godot-scene/Overworld_slot1_albedo_bump.png" id="7_wtnbu"]
+[ext_resource type="Texture2D" uid="uid://n1kcunv1ddr8" path="res://godot-scene/Overworld_slot0_normal_roughness.png" id="8_8djac"]
+[ext_resource type="Texture2D" uid="uid://c414k2bowuw87" path="res://godot-scene/Overworld_slot1_normal_roughness.png" id="9_sxfcg"]
+
+[sub_resource type="Resource" id="Resource_ix2q8"]
+script = ExtResource("3_51lqq")
+mode = 0
+textures = [[ExtResource("6_ebksv"), ExtResource("7_wtnbu")], [ExtResource("8_8djac"), ExtResource("9_sxfcg")]]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yhk7e"]
+size = Vector3(300, 20, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_l10w5"]
+size = Vector2(30, 30)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_t5jx3"]
+size = Vector2(10, 10)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_7ak46"]
+size = Vector2(100, 100)
+
+[sub_resource type="Sky" id="Sky_8g8sk"]
+
+[sub_resource type="Environment" id="Environment_jo6b7"]
+background_mode = 2
+sky = SubResource("Sky_8g8sk")
+
+[node name="Overword" type="Node3D"]
+
+[node name="PlayerBase" parent="." instance=ExtResource("1_j5r38")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 146.047, 50.5771, 162.751)
+
+[node name="Virtual Joystick" parent="." instance=ExtResource("2_4c2tx")]
+offset_left = 53.0
+offset_top = -338.0
+offset_right = 353.0
+offset_bottom = -38.0
+
+[node name="HTerrain" type="Node3D" parent="."]
+script = ExtResource("1_jleaa")
+_terrain_data = ExtResource("2_ckm8f")
+chunk_size = 32
+collision_enabled = true
+collision_layer = 1
+collision_mask = 1
+shader_type = "Classic4Lite"
+custom_shader = null
+custom_globalmap_shader = null
+texture_set = SubResource("Resource_ix2q8")
+render_layers = 1
+cast_shadow = 1
+shader_params/u_ground_uv_scale = 20
+shader_params/u_depth_blending = true
+shader_params/u_triplanar = null
+shader_params/u_tile_reduction = null
+
+[node name="limit" type="Node3D" parent="."]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="limit"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.02267, 0, -10.5447)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="limit/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 267.395, 6.16045, 111.675)
+shape = SubResource("BoxShape3D_yhk7e")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="limit"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.30797, 0, 290.735)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="limit/StaticBody3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 267.395, 6.16045, 111.675)
+shape = SubResource("BoxShape3D_yhk7e")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="limit"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 518.427)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="limit/StaticBody3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 267.395, 6.16045, 111.675)
+shape = SubResource("BoxShape3D_yhk7e")
+
+[node name="StaticBody3D4" type="StaticBody3D" parent="limit"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 299.078, 0, 520.007)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="limit/StaticBody3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 267.395, 6.16045, 111.675)
+shape = SubResource("BoxShape3D_yhk7e")
+
+[node name="bangunan" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.7594, 0)
+
+[node name="b" type="MeshInstance3D" parent="bangunan"]
+transform = Transform3D(1, 0, 0, 0, 3, 0, 0, 0, 1, 142.325, 7.06433, 128.792)
+mesh = SubResource("PlaneMesh_l10w5")
+
+[node name="b4" type="MeshInstance3D" parent="bangunan"]
+transform = Transform3D(1, 0, 0, 0, 3, 0, 0, 0, 1, 186.002, 7.06433, 128.792)
+mesh = SubResource("PlaneMesh_l10w5")
+
+[node name="b5" type="MeshInstance3D" parent="bangunan"]
+transform = Transform3D(1, 0, 0, 0, 3, 0, 0, 0, 1, 225.862, 7.06433, 128.792)
+mesh = SubResource("PlaneMesh_l10w5")
+
+[node name="b6" type="MeshInstance3D" parent="bangunan"]
+transform = Transform3D(1, 0, 0, 0, 3, 0, 0, 0, 1, 400.715, 7.06433, 209.953)
+mesh = SubResource("PlaneMesh_t5jx3")
+
+[node name="b2" type="MeshInstance3D" parent="bangunan"]
+transform = Transform3D(1, 0, 0, 0, 3, 0, 0, 0, 1, 176.525, 7.06433, 307.432)
+mesh = SubResource("PlaneMesh_7ak46")
+
+[node name="b3" type="MeshInstance3D" parent="bangunan"]
+transform = Transform3D(1, 0, 0, 0, 3, 0, 0, 0, 1, 300.01, 7.06433, 307.432)
+mesh = SubResource("PlaneMesh_7ak46")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_jo6b7")

@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://7tou7x6e8gik"]
+
+[ext_resource type="Script" path="res://Script/prefab/Player_base.gd" id="1_7ptdx"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1dxwb"]
+
+[node name="PlayerBase" type="CharacterBody3D"]
+script = ExtResource("1_7ptdx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_1dxwb")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.642566)
+
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D"]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="SpringArm3D"]
+light_energy = 15.0
+light_indirect_energy = 4.0
+light_volumetric_fog_energy = 2.0
+shadow_enabled = true
+spot_range = 25.0

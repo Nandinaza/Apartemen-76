@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bhcd16w4ty65a"]
+[gd_scene load_steps=18 format=3 uid="uid://bhcd16w4ty65a"]
 
 [ext_resource type="PackedScene" uid="uid://7tou7x6e8gik" path="res://addons/Prefab/Player_base.tscn" id="1_j5r38"]
 [ext_resource type="Script" path="res://addons/zylann.hterrain/hterrain.gd" id="1_jleaa"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bikulx8wfgwnn" path="res://godot-scene/Overworld_slot1_albedo_bump.png" id="7_wtnbu"]
 [ext_resource type="Texture2D" uid="uid://n1kcunv1ddr8" path="res://godot-scene/Overworld_slot0_normal_roughness.png" id="8_8djac"]
 [ext_resource type="Texture2D" uid="uid://c414k2bowuw87" path="res://godot-scene/Overworld_slot1_normal_roughness.png" id="9_sxfcg"]
+[ext_resource type="PackedScene" uid="uid://bsmqxejhgp210" path="res://Blender-3/Terrain/bangunan ukuran 100.tscn" id="10_fysp1"]
 
 [sub_resource type="Resource" id="Resource_ix2q8"]
 script = ExtResource("3_51lqq")
@@ -36,7 +37,7 @@ sky = SubResource("Sky_8g8sk")
 [node name="Overword" type="Node3D"]
 
 [node name="PlayerBase" parent="." instance=ExtResource("1_j5r38")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 146.047, 50.5771, 162.751)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 232.032, 50.5771, 322.389)
 
 [node name="Virtual Joystick" parent="." instance=ExtResource("2_4c2tx")]
 offset_left = 53.0
@@ -113,11 +114,15 @@ mesh = SubResource("PlaneMesh_t5jx3")
 
 [node name="b2" type="MeshInstance3D" parent="bangunan"]
 transform = Transform3D(1, 0, 0, 0, 3, 0, 0, 0, 1, 176.525, 7.06433, 307.432)
+visible = false
 mesh = SubResource("PlaneMesh_7ak46")
 
 [node name="b3" type="MeshInstance3D" parent="bangunan"]
 transform = Transform3D(1, 0, 0, 0, 3, 0, 0, 0, 1, 300.01, 7.06433, 307.432)
 mesh = SubResource("PlaneMesh_7ak46")
+
+[node name="Root Scene" parent="bangunan" instance=ExtResource("10_fysp1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 176, 4.1, 307)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_jo6b7")

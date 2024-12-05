@@ -1,0 +1,37 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://qd384ty3ae3t"
+path.s3tc="res://.godot/imported/akbar-59672b5c1683749e0d46a0b19b024f8e_akbar.png-0ac6c03c371a98c16fbb49ad2fc74dcd.s3tc.ctex"
+path.etc2="res://.godot/imported/akbar-59672b5c1683749e0d46a0b19b024f8e_akbar.png-0ac6c03c371a98c16fbb49ad2fc74dcd.etc2.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
+}
+generator_parameters={}
+
+[deps]
+
+source_file="res://Blender-3/Character/akbar_FBX/akbar-59672b5c1683749e0d46a0b19b024f8e_akbar.png"
+dest_files=["res://.godot/imported/akbar-59672b5c1683749e0d46a0b19b024f8e_akbar.png-0ac6c03c371a98c16fbb49ad2fc74dcd.s3tc.ctex", "res://.godot/imported/akbar-59672b5c1683749e0d46a0b19b024f8e_akbar.png-0ac6c03c371a98c16fbb49ad2fc74dcd.etc2.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

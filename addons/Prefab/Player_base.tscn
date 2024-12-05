@@ -11,7 +11,7 @@ script = ExtResource("1_7ptdx")
 shape = SubResource("CapsuleShape3D_1dxwb")
 
 [node name="SpringArm3D" type="SpringArm3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.642566)
+transform = Transform3D(1, 0, 0, 0, 0.97896, 0.204052, 0, -0.204052, 0.97896, 0, 0.955145, 1.79212)
 
 [node name="Camera3D" type="Camera3D" parent="SpringArm3D"]
 

@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-
+@onready var anplayeer = $"Root Scene/AnimationPlayer"
 const SPEED = 15.0
 const JUMP_VELOCITY = 30
 
@@ -24,9 +24,11 @@ func _physics_process(delta):
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
+		anplayeer.play("run")
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+		anplayeer.play("idle")
 
 	move_and_slide()
 func _input(event: InputEvent) -> void:

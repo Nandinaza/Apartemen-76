@@ -1,0 +1,269 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfvlytep10w80"]
+
+[ext_resource type="PackedScene" uid="uid://5f4mmg74ctg5" path="res://Blender-3/Character/akbar_FBX/akbar.blend" id="1_lfo53"]
+
+[node name="akbar" instance=ExtResource("1_lfo53")]
+
+[node name="Skeleton3D" parent="Armature" index="0"]
+bones/0/rotation = Quaternion(-0.707101, 0.000683891, 0.000727952, 0.707112)
+bones/4/rotation = Quaternion(0.00646728, -4.11616e-14, -2.27645e-13, 0.999979)
+bones/7/rotation = Quaternion(-0.589331, -0.390475, 0.590019, -0.389995)
+bones/8/rotation = Quaternion(0.257053, 0.0264606, -0.00704112, 0.966009)
+bones/8/scale = Vector3(1, 1, 1)
+bones/9/rotation = Quaternion(0.041218, 0.00450369, 0.108524, 0.993229)
+bones/9/scale = Vector3(1, 1, 1)
+bones/10/rotation = Quaternion(-0.223155, -0.200976, -0.538507, 0.787287)
+bones/11/rotation = Quaternion(-0.0233316, -0.0140057, 0.514512, 0.857051)
+bones/11/scale = Vector3(1, 1, 1)
+bones/12/rotation = Quaternion(0.373604, -1.86381e-08, -4.74567e-08, 0.927588)
+bones/12/scale = Vector3(1, 1, 1)
+bones/13/rotation = Quaternion(0.109441, 1.06718e-06, 2.55307e-08, 0.993993)
+bones/14/rotation = Quaternion(-1.30385e-08, -2.23517e-07, -1.81608e-08, 1)
+bones/15/scale = Vector3(1, 1, 1)
+bones/16/rotation = Quaternion(0.0800518, -6.80528e-07, -6.20272e-08, 0.996791)
+bones/18/rotation = Quaternion(-2.38651e-08, -1.68476e-06, 1.51339e-09, 1)
+bones/19/rotation = Quaternion(0.367155, 0.208457, 0.447569, 0.788305)
+bones/19/scale = Vector3(1, 1, 1)
+bones/20/rotation = Quaternion(0.0392917, 1.36976e-06, -1.07265e-08, 0.999228)
+bones/20/scale = Vector3(1, 1, 1)
+bones/21/rotation = Quaternion(-0.0224496, 7.92366e-07, -1.12837e-07, 0.999748)
+bones/23/rotation = Quaternion(0.436468, 0.240384, 0.41827, 0.759448)
+bones/23/scale = Vector3(1, 1, 1)
+bones/24/rotation = Quaternion(-0.0247536, 8.30166e-06, 4.30326e-08, 0.999694)
+bones/25/rotation = Quaternion(0.035197, -4.27975e-06, 9.25769e-08, 0.99938)
+bones/27/rotation = Quaternion(0.586777, -0.392164, 0.592533, 0.388336)
+bones/27/scale = Vector3(1, 1, 1)
+bones/28/rotation = Quaternion(0.256941, -0.0194097, 0.0051615, 0.966218)
+bones/29/rotation = Quaternion(0.0429081, -0.00504137, -0.116587, 0.99224)
+bones/31/rotation = Quaternion(-0.00437206, 0.0028005, -0.539351, 0.842065)
+bones/31/scale = Vector3(1, 1, 1)
+bones/32/rotation = Quaternion(0.395152, 4.47633e-07, -5.36663e-09, 0.918616)
+bones/33/rotation = Quaternion(0.101101, -1.19307e-06, -7.63251e-09, 0.994876)
+bones/35/rotation = Quaternion(0.269353, -0.192359, -0.54841, 0.767915)
+bones/36/rotation = Quaternion(0.123712, 6.22817e-07, 8.32408e-08, 0.992318)
+bones/37/rotation = Quaternion(0.0932946, -8.50484e-08, 1.5203e-07, 0.995639)
+bones/37/scale = Vector3(1, 1, 1)
+bones/39/rotation = Quaternion(0.405267, -0.250366, -0.462112, 0.748016)
+bones/40/rotation = Quaternion(0.00828555, -2.01485e-07, 5.84681e-08, 0.999966)
+bones/40/scale = Vector3(1, 1, 1)
+bones/41/rotation = Quaternion(-0.00408422, -1.72728e-06, 1.32365e-07, 0.999992)
+bones/41/scale = Vector3(1, 1, 1)
+bones/42/rotation = Quaternion(2.79397e-08, -1.14553e-07, -1.21072e-08, 1)
+bones/44/rotation = Quaternion(-0.0542014, -7.52504e-06, -5.41621e-07, 0.99853)
+bones/45/rotation = Quaternion(-0.11071, -7.20234e-07, -1.6921e-07, 0.993853)
+bones/47/rotation = Quaternion(-0.00264213, 0.0062294, 0.999759, -0.0208609)
+bones/48/rotation = Quaternion(-0.0441804, 6.93064e-05, 0.0203376, 0.998817)
+bones/48/scale = Vector3(1, 1, 1)
+bones/49/rotation = Quaternion(0.540009, 0.00384575, -0.00204693, 0.841648)
+bones/49/scale = Vector3(1, 1, 1)
+bones/50/rotation = Quaternion(0.203498, 0.001371, 0.00659593, 0.979052)
+bones/52/rotation = Quaternion(0.00309301, 0.0100325, 0.999683, 0.0228937)
+bones/52/scale = Vector3(1, 1, 1.00001)
+bones/53/rotation = Quaternion(-0.0536652, 3.16083e-05, -0.0202167, 0.998354)
+bones/54/rotation = Quaternion(0.541938, -0.00337924, 0.00157199, 0.84041)
+bones/55/rotation = Quaternion(0.207391, 0.0153896, -0.00326318, 0.978132)
+bones/56/rotation = Quaternion(7.90471e-07, -4.85388e-07, 3.36644e-07, 1)
+
+[node name="mixamorig_Hips" parent="Armature_001" index="0"]
+transform = Transform3D(0.994057, 0.0596496, -0.0910659, 0.0946292, -0.059914, 0.993708, 0.0538182, -0.99642, -0.0652025, 0.567983, -1.18019, -309.751)
+
+[node name="mixamorig_Spine" parent="Armature_001/mixamorig_Hips" index="0"]
+transform = Transform3D(0.998762, -0.0423186, 0.0261659, 0.0434609, 0.998053, -0.0447473, -0.0242213, 0.0458291, 0.998656, 0, 30.4655, -0.3941)
+
+[node name="mixamorig_Spine1" parent="Armature_001/mixamorig_Hips/mixamorig_Spine" index="0"]
+transform = Transform3D(0.999615, -0.027172, 0.00557361, 0.027279, 0.999426, -0.0201072, -0.00502406, 0.0202515, 0.999782, -1.19209e-07, 35.5461, -6.55651e-07)
+
+[node name="mixamorig_Spine2" parent="Armature_001/mixamorig_Hips/mixamorig_Spine/mixamorig_Spine1" index="0"]
+transform = Transform3D(0.999611, -0.0272308, 0.00595836, 0.0273431, 0.999433, -0.0196556, -0.00541974, 0.0198109, 0.999789, 9.53674e-07, 40.6241, -1.49012e-07)
+
+[node name="mixamorig_Neck" parent="Armature_001/mixamorig_Hips/mixamorig_Spine/mixamorig_Spine1/mixamorig_Spine2" index="0"]
+transform = Transform3D(0.999968, -0.00793561, -0.00137815, 0.00773383, 0.993801, -0.110904, 0.0022497, 0.110889, 0.99383, -1.90735e-06, 45.702, -1.05767e-06)
+
+[node name="mixamorig_Head" parent="Armature_001/mixamorig_Hips/mixamorig_Spine/mixamorig_Spine1/mixamorig_Spine2/mixamorig_Neck" index="0"]
+transform = Transform3D(0.999711, 0.00140571, 0.0240086, -0.00455395, 0.991294, 0.131584, -0.0236146, -0.131656, 0.991014, -3.8147e-06, 22.5129, 0.4675)
+
+[node name="mixamorig_LeftShoulder" parent="Armature_001/mixamorig_Hips/mixamorig_Spine/mixamorig_Spine1/mixamorig_Spine2" index="1"]
+transform = Transform3D(0.298348, 0.869597, -0.393432, 0.0169474, -0.416967, -0.908764, -0.954307, 0.26446, -0.139139, 19.6986, 37.4288, -0.022199)
+
+[node name="mixamorig_LeftArm" parent="Armature_001/mixamorig_Hips/mixamorig_Spine/mixamorig_Spine1/mixamorig_Spine2/mixamorig_LeftShoulder" index="0"]
+transform = Transform3D(0.923168, -0.0412622, 0.382176, 0.348129, 0.511321, -0.78572, -0.162994, 0.858398, 0.4864, -2.98023e-08, 42.8968, -9.72115e-06)
+
+[node name="mixamorig_LeftForeArm" parent="Armature_001/mixamorig_Hips/mixamorig_Spine/mixamorig_Spine1/mixamorig_Spine2/mixamorig_LeftShoulder/mixamorig_LeftArm" index="0"]
+transform = Transform3D(0.999635, -0.0254491, 0.00905309, 0.0254392, 0.999675, 0.00120565, -0.00908084, -0.000974909, 0.999958, -3.3556e-06, 64.5417, 3.00415e-06)
+
+[node name="mixamorig_LeftHand" parent="Armature_001/mixamorig_Hips/mixamorig_Spine/mixamorig_Spine1/mixamorig_Spine2/mixamorig_LeftShoulder/mixamorig_LeftArm/mixamorig_LeftForeArm" index="0"]
+transform = Transform3D(0.908817, -0.157401, -0.386364, 0.079933, 0.974636, -0.209036, 0.409466, 0.159092, 0.898347, 7.42796e-09, 107.022, -1.86793e-05)
+
+[node name="mixamorig_RightShoulder" parent="Armature_001/mixamorig_Hips/mixamorig_Spine/mixamorig_Spine1/mixamorig_Spine2" index="2"]
+transform = Transform3D(0.254406, -0.864094, 0.434303, -0.0205228, -0.453801, -0.890867, 0.96688, 0.217729, -0.133183, -19.6986, 37.431, -0.191799)
+
+[node name="mixamorig_RightArm" parent="Armature_001/mixamorig_Hips/mixamorig_Spine/mixamorig_Spine1/mixamorig_Spine2/mixamorig_RightShoulder" index="0"]
+transform = Transform3D(0.847124, 0.0290738, -0.530599, -0.427268, 0.630937, -0.64758, 0.315948, 0.775289, 0.546904, 3.52006e-06, 42.8968, 5.16055e-06)
+
+[node name="mixamorig_RightForeArm" parent="Armature_001/mixamorig_Hips/mixamorig_Spine/mixamorig_Spine1/mixamorig_Spine2/mixamorig_RightShoulder/mixamorig_RightArm" index="0"]
+transform = Transform3D(0.993136, 0.116541, -0.00996458, -0.116513, 0.993183, 0.00337823, 0.0102904, -0.00219404, 0.999944, -9.08903e-08, 64.5396, 9.71981e-06)
+
+[node name="mixamorig_RightHand" parent="Armature_001/mixamorig_Hips/mixamorig_Spine/mixamorig_Spine1/mixamorig_Spine2/mixamorig_RightShoulder/mixamorig_RightArm/mixamorig_RightForeArm" index="0"]
+transform = Transform3D(0.996306, 0.0474054, 0.0716105, -0.0306565, 0.975227, -0.219072, -0.0802217, 0.216067, 0.973077, -4.51779e-06, 107.467, -4.0468e-06)
+
+[node name="mixamorig_LeftUpLeg" parent="Armature_001/mixamorig_Hips" index="1"]
+transform = Transform3D(-0.9565, 0.138436, 0.256805, -0.106142, -0.985051, 0.135677, 0.271747, 0.102516, 0.956899, 25.8282, -16.9273, 0.6283)
+
+[node name="mixamorig_LeftLeg" parent="Armature_001/mixamorig_Hips/mixamorig_LeftUpLeg" index="0"]
+transform = Transform3D(0.992873, -0.112055, -0.0405858, 0.117783, 0.974556, 0.190702, 0.0181842, -0.194123, 0.980808, -1.70955e-06, 138.962, -8.38874e-06)
+
+[node name="mixamorig_LeftFoot" parent="Armature_001/mixamorig_Hips/mixamorig_LeftUpLeg/mixamorig_LeftLeg" index="0"]
+transform = Transform3D(0.998031, 0.0326953, -0.0535313, -0.0626618, 0.480991, -0.874483, -0.00284346, 0.876115, 0.482092, -1.53817e-06, 128.471, 2.02081e-07)
+
+[node name="mixamorig_LeftToeBase" parent="Armature_001/mixamorig_Hips/mixamorig_LeftUpLeg/mixamorig_LeftLeg/mixamorig_LeftFoot" index="0"]
+transform = Transform3D(0.999785, -0.0196772, 0.00653236, 0.0204164, 0.879504, -0.475452, 0.00361031, 0.475484, 0.879717, -7.63161e-06, 53.2745, 1.47001e-06)
+
+[node name="mixamorig_RightUpLeg" parent="Armature_001/mixamorig_Hips" index="2"]
+transform = Transform3D(-0.981519, 0.0862687, -0.170826, -0.0763076, -0.995025, -0.0640572, -0.175501, -0.0498375, 0.983227, -25.8282, -16.9273, 1.015)
+
+[node name="mixamorig_RightLeg" parent="Armature_001/mixamorig_Hips/mixamorig_RightUpLeg" index="0"]
+transform = Transform3D(0.980722, 0.0924982, 0.172129, -0.107447, 0.991016, 0.0796382, -0.163216, -0.0965976, 0.98185, 7.13656e-08, 139.02, 2.79734e-06)
+
+[node name="mixamorig_RightFoot" parent="Armature_001/mixamorig_Hips/mixamorig_RightUpLeg/mixamorig_RightLeg" index="0"]
+transform = Transform3D(0.99977, 0.0213134, -0.0024299, -0.0112499, 0.424493, -0.905361, -0.0182649, 0.90518, 0.424635, 4.70556e-06, 128.446, -2.4798e-06)
+
+[node name="mixamorig_RightToeBase" parent="Armature_001/mixamorig_Hips/mixamorig_RightUpLeg/mixamorig_RightLeg/mixamorig_RightFoot" index="0"]
+transform = Transform3D(0.999365, 0.0235555, 0.0267498, -0.00628693, 0.855224, -0.51822, -0.035084, 0.517723, 0.854829, -2.63257e-06, 52.6359, 4.59531e-05)
+
+[node name="mixamorig_Hips2" parent="Armature_002" index="0"]
+transform = Transform3D(0.998138, 0.0262117, -0.0550756, 0.054542, 0.0206554, 0.998298, 0.0273047, -0.999443, 0.0191873, -42.1279, -0.371866, -305.045)
+
+[node name="mixamorig_Spine3" parent="Armature_002/mixamorig_Hips2" index="0"]
+transform = Transform3D(0.999949, -0.00842334, -0.00561217, 0.00867346, 0.998897, 0.0461431, 0.0052173, -0.0461894, 0.998919, -3.8147e-06, 30.4655, -0.394099)
+
+[node name="mixamorig_Spine12" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3" index="0"]
+transform = Transform3D(0.999752, -0.0191099, -0.0113998, 0.0198667, 0.997317, 0.0704553, 0.0100228, -0.0706644, 0.99745, 3.8147e-06, 35.546, -8.9407e-07)
+
+[node name="mixamorig_Spine22" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12" index="0"]
+transform = Transform3D(0.999749, -0.0191626, -0.0115811, 0.0199316, 0.997319, 0.0704099, 0.0102008, -0.0706231, 0.997451, 0, 40.6241, -1.49012e-07)
+
+[node name="mixamorig_Neck2" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22" index="0"]
+transform = Transform3D(0.999711, -0.0236995, 0.00405772, 0.0239943, 0.994209, -0.104754, -0.00155161, 0.104821, 0.99449, 0, 45.7021, 1.11749e-05)
+
+[node name="mixamorig_Head2" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_Neck2" index="0"]
+transform = Transform3D(0.999456, 0.00825033, 0.0319258, -0.00704247, 0.999262, -0.0377627, -0.0322138, 0.0375173, 0.998777, 3.8147e-06, 22.5129, 0.4675)
+
+[node name="mixamorig_LeftShoulder2" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22" index="1"]
+transform = Transform3D(-0.11705, 0.923977, -0.364097, 0.00775531, -0.365756, -0.930679, -0.993096, -0.11176, 0.0356461, 19.6986, 37.4288, -0.0222075)
+
+[node name="mixamorig_LeftArm2" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_LeftShoulder2" index="0"]
+transform = Transform3D(0.675734, -0.116751, 0.727842, 0.675857, 0.492303, -0.548502, -0.29428, 0.862559, 0.411572, -2.27358e-06, 42.8968, 1.95239e-05)
+
+[node name="mixamorig_LeftForeArm2" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_LeftShoulder2/mixamorig_LeftArm2" index="0"]
+transform = Transform3D(0.999846, -0.0150205, 0.00906305, 0.0150147, 0.999887, 0.000711604, -0.00907272, -0.000575415, 0.999959, 8.01883e-06, 64.5418, -4.72871e-06)
+
+[node name="mixamorig_LeftHand2" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_LeftShoulder2/mixamorig_LeftArm2/mixamorig_LeftForeArm2" index="0"]
+transform = Transform3D(0.964453, 0.0523508, -0.259018, -0.120114, 0.95992, -0.253231, 0.23538, 0.275341, 0.932086, 1.73023e-07, 107.022, -2.63888e-05)
+
+[node name="mixamorig_LeftHandThumb12" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_LeftShoulder2/mixamorig_LeftArm2/mixamorig_LeftForeArm2/mixamorig_LeftHand2" index="0"]
+transform = Transform3D(0.507057, -0.85786, 0.0834804, 0.85413, 0.48713, -0.182119, 0.115567, 0.163648, 0.979726, -4.88859, 7.96142, -0.438981)
+
+[node name="mixamorig_LeftHandThumb22" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_LeftShoulder2/mixamorig_LeftArm2/mixamorig_LeftForeArm2/mixamorig_LeftHand2/mixamorig_LeftHandThumb12" index="0"]
+transform = Transform3D(0.734083, 0.669369, 0.11431, -0.662319, 0.742916, -0.0970002, -0.149852, -0.0045037, 0.988698, 3.78252, 6.45573, -6.38739e-06)
+
+[node name="mixamorig_LeftHandThumb32" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_LeftShoulder2/mixamorig_LeftArm2/mixamorig_LeftForeArm2/mixamorig_LeftHand2/mixamorig_LeftHandThumb12/mixamorig_LeftHandThumb22" index="0"]
+transform = Transform3D(0.998112, -0.0347553, -0.0506437, 0.0373722, 0.997964, 0.0516754, 0.0487446, -0.0534705, 0.997379, -2.039, 9.69328, -5.34865e-06)
+
+[node name="mixamorig_LeftHandIndex12" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_LeftShoulder2/mixamorig_LeftArm2/mixamorig_LeftForeArm2/mixamorig_LeftHand2" index="1"]
+transform = Transform3D(0.882681, -0.233074, 0.408106, 0.337131, 0.919022, -0.204307, -0.32744, 0.317923, 0.88978, -4.7465, 19.6601, -2.18029)
+
+[node name="mixamorig_LeftHandIndex22" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_LeftShoulder2/mixamorig_LeftArm2/mixamorig_LeftForeArm2/mixamorig_LeftHand2/mixamorig_LeftHandIndex12" index="0"]
+transform = Transform3D(0.998548, 0.0537883, 0.00304437, -0.0537881, 0.998553, -0.000147638, -0.00304791, -1.63276e-05, 0.999995, 0.414388, 9.02616, 1.64605e-06)
+
+[node name="mixamorig_LeftHandIndex32" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_LeftShoulder2/mixamorig_LeftArm2/mixamorig_LeftForeArm2/mixamorig_LeftHand2/mixamorig_LeftHandIndex12/mixamorig_LeftHandIndex22" index="0"]
+transform = Transform3D(0.997393, 0.0720699, -0.00354766, -0.0718077, 0.996196, 0.0493806, 0.00709301, -0.0489972, 0.998774, -0.0659089, 8.29929, 4.0147e-06)
+
+[node name="mixamorig_LeftHandMiddle12" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_LeftShoulder2/mixamorig_LeftArm2/mixamorig_LeftForeArm2/mixamorig_LeftHand2" index="2"]
+transform = Transform3D(0.866445, -0.192678, 0.460597, 0.287141, 0.947003, -0.143998, -0.408441, 0.257023, 0.875851, 0.9269, 26.6363, -2.95019)
+
+[node name="mixamorig_LeftHandMiddle22" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_LeftShoulder2/mixamorig_LeftArm2/mixamorig_LeftForeArm2/mixamorig_LeftHand2/mixamorig_LeftHandMiddle12" index="0"]
+transform = Transform3D(0.999946, 0.0103376, -0.000136298, -0.0103383, 0.999769, -0.0188508, -5.86054e-05, 0.0188512, 0.999822, 0.0848192, 7.8855, 9.87938e-06)
+
+[node name="mixamorig_LeftHandMiddle32" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_LeftShoulder2/mixamorig_LeftArm2/mixamorig_LeftForeArm2/mixamorig_LeftHand2/mixamorig_LeftHandMiddle12/mixamorig_LeftHandMiddle22" index="0"]
+transform = Transform3D(0.999734, 0.0230708, 0.000575251, -0.0230679, 0.998249, 0.0544599, 0.000682191, -0.0544586, 0.998516, -0.0904975, 7.50917, 1.10921e-06)
+
+[node name="mixamorig_LeftHandRing12" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_LeftShoulder2/mixamorig_LeftArm2/mixamorig_LeftForeArm2/mixamorig_LeftHand2" index="3"]
+transform = Transform3D(0.816405, -0.180741, 0.548466, 0.263071, 0.961887, -0.0746081, -0.514078, 0.205196, 0.832838, 3.8196, 31.3921, -1.28558)
+
+[node name="mixamorig_LeftHandRing22" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_LeftShoulder2/mixamorig_LeftArm2/mixamorig_LeftForeArm2/mixamorig_LeftHand2/mixamorig_LeftHandRing12" index="0"]
+transform = Transform3D(0.999683, -0.0251627, -5.18396e-05, 0.025159, 0.999569, -0.0151395, 0.000432768, 0.0151334, 0.999885, -0.0129959, 4.98407, 8.87494e-06)
+
+[node name="mixamorig_LeftHandRing32" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_LeftShoulder2/mixamorig_LeftArm2/mixamorig_LeftForeArm2/mixamorig_LeftHand2/mixamorig_LeftHandRing12/mixamorig_LeftHandRing22" index="0"]
+transform = Transform3D(0.997871, 0.0651897, 0.00180917, -0.0651904, 0.996356, 0.0550013, 0.00178294, -0.0550022, 0.998484, 0.0508898, 5.03604, 5.62909e-06)
+
+[node name="mixamorig_RightShoulder2" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22" index="2"]
+transform = Transform3D(0.0192995, -0.944449, 0.32809, -0.0201475, -0.328452, -0.944306, 0.999611, 0.0116144, -0.0253673, -19.6986, 37.4309, -0.1918)
+
+[node name="mixamorig_RightArm2" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_RightShoulder2" index="0"]
+transform = Transform3D(0.854159, 0.078154, -0.514105, -0.448476, 0.611133, -0.652216, 0.263213, 0.78766, 0.557055, 3.57406e-06, 42.8968, 3.60215e-06)
+
+[node name="mixamorig_RightForeArm2" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_RightShoulder2/mixamorig_RightArm2" index="0"]
+transform = Transform3D(0.999932, 0.00568074, -0.010162, -0.00567936, 0.999984, 0.000164751, 0.0101628, -0.000107027, 0.999948, -3.82786e-06, 64.5396, 2.05205e-06)
+
+[node name="mixamorig_RightHand2" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_RightShoulder2/mixamorig_RightArm2/mixamorig_RightForeArm2" index="0"]
+transform = Transform3D(0.998042, -0.0268964, 0.0564819, 0.0420039, 0.957187, -0.286407, -0.0463604, 0.288218, 0.956442, -1.08425e-06, 107.467, 2.61723e-05)
+
+[node name="mixamorig_RightHandThumb12" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_RightShoulder2/mixamorig_RightArm2/mixamorig_RightForeArm2/mixamorig_RightHand2" index="0"]
+transform = Transform3D(0.608226, 0.786322, -0.108435, -0.785137, 0.575892, -0.227834, -0.116704, 0.22371, 0.967643, 5.04358, 8.09812, -0.0827152)
+
+[node name="mixamorig_RightHandThumb22" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_RightShoulder2/mixamorig_RightArm2/mixamorig_RightForeArm2/mixamorig_RightHand2/mixamorig_RightHandThumb12" index="0"]
+transform = Transform3D(0.75004, -0.641943, -0.159213, 0.6245, 0.766651, -0.149152, 0.217808, 0.0124418, 0.975912, -4.19752, 6.3747, 1.30467e-05)
+
+[node name="mixamorig_RightHandThumb32" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_RightShoulder2/mixamorig_RightArm2/mixamorig_RightForeArm2/mixamorig_RightHand2/mixamorig_RightHandThumb12/mixamorig_RightHandThumb22" index="0"]
+transform = Transform3D(0.996051, -0.0689179, 0.0559727, 0.0610268, 0.989347, 0.132169, -0.0644853, -0.128231, 0.989646, 1.24902, 10.0108, -9.33916e-07)
+
+[node name="mixamorig_RightHandIndex12" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_RightShoulder2/mixamorig_RightArm2/mixamorig_RightForeArm2/mixamorig_RightHand2" index="1"]
+transform = Transform3D(0.890859, 0.0897801, -0.44532, -0.239628, 0.925676, -0.292749, 0.385939, 0.367509, 0.846161, 2.59139, 20.6078, -2.25101)
+
+[node name="mixamorig_RightHandIndex22" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_RightShoulder2/mixamorig_RightArm2/mixamorig_RightForeArm2/mixamorig_RightHand2/mixamorig_RightHandIndex12" index="0"]
+transform = Transform3D(0.99672, -0.0806251, -0.00697634, 0.0806238, 0.996745, -0.000477804, 0.00699215, -8.62217e-05, 0.999976, -0.668221, 9.75651, 1.70073e-06)
+
+[node name="mixamorig_RightHandIndex32" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_RightShoulder2/mixamorig_RightArm2/mixamorig_RightForeArm2/mixamorig_RightHand2/mixamorig_RightHandIndex12/mixamorig_RightHandIndex22" index="0"]
+transform = Transform3D(0.994974, -0.0998417, 0.00758455, 0.0992933, 0.9936, 0.0538472, -0.0129122, -0.0528235, 0.99852, 0.1116, 9.0491, 4.32026e-06)
+
+[node name="mixamorig_RightHandMiddle12" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_RightShoulder2/mixamorig_RightArm2/mixamorig_RightForeArm2/mixamorig_RightHand2" index="2"]
+transform = Transform3D(0.813608, 0.0343445, -0.580399, -0.196494, 0.95576, -0.21889, 0.547204, 0.292136, 0.784362, -0.112491, 28.2079, -2.98039)
+
+[node name="mixamorig_RightHandMiddle22" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_RightShoulder2/mixamorig_RightArm2/mixamorig_RightForeArm2/mixamorig_RightHand2/mixamorig_RightHandMiddle12" index="0"]
+transform = Transform3D(0.999908, 0.0135694, -0.000113236, -0.0135694, 0.999768, -0.0167489, -0.000114062, 0.0167489, 0.99986, -0.0133892, 8.16697, 5.63581e-06)
+
+[node name="mixamorig_RightHandMiddle32" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_RightShoulder2/mixamorig_RightArm2/mixamorig_RightForeArm2/mixamorig_RightHand2/mixamorig_RightHandMiddle12/mixamorig_RightHandMiddle22" index="0"]
+transform = Transform3D(0.99884, -0.0481094, -0.0019022, 0.0481447, 0.997625, 0.0492527, -0.000471839, -0.0492872, 0.998784, 0.0124995, 7.56418, 1.37476e-06)
+
+[node name="mixamorig_RightHandRing12" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_RightShoulder2/mixamorig_RightArm2/mixamorig_RightForeArm2/mixamorig_RightHand2" index="3"]
+transform = Transform3D(0.777852, 0.0353369, -0.627453, -0.177028, 0.970308, -0.164815, 0.602999, 0.239278, 0.761011, -2.47892, 33.1874, -1.84132)
+
+[node name="mixamorig_RightHandRing22" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_RightShoulder2/mixamorig_RightArm2/mixamorig_RightForeArm2/mixamorig_RightHand2/mixamorig_RightHandRing12" index="0"]
+transform = Transform3D(0.999618, 0.0276246, -0.00106618, -0.0276368, 0.99952, -0.01398, 0.000679474, 0.0140041, 0.999902, 0.0723894, 5.59084, -1.62767e-05)
+
+[node name="mixamorig_RightHandRing32" parent="Armature_002/mixamorig_Hips2/mixamorig_Spine3/mixamorig_Spine12/mixamorig_Spine22/mixamorig_RightShoulder2/mixamorig_RightArm2/mixamorig_RightForeArm2/mixamorig_RightHand2/mixamorig_RightHandRing12/mixamorig_RightHandRing22" index="0"]
+transform = Transform3D(0.999586, -0.0287457, 0.00104068, 0.0286664, 0.998508, 0.0464706, -0.00237495, -0.0464215, 0.998919, 0.00670817, 5.15895, 1.54395e-05)
+
+[node name="mixamorig_LeftUpLeg2" parent="Armature_002/mixamorig_Hips2" index="1"]
+transform = Transform3D(-0.989724, 0.112815, 0.0878771, -0.0929407, -0.97449, 0.204286, 0.108681, 0.194018, 0.974967, 25.8282, -16.9273, 0.6283)
+
+[node name="mixamorig_LeftLeg2" parent="Armature_002/mixamorig_Hips2/mixamorig_LeftUpLeg2" index="0"]
+transform = Transform3D(0.9866, -0.06823, -0.148203, 0.123243, 0.906901, 0.402917, 0.106914, -0.415783, 0.903158, -7.42158e-07, 138.962, -7.67405e-07)
+
+[node name="mixamorig_LeftFoot2" parent="Armature_002/mixamorig_Hips2/mixamorig_LeftUpLeg2/mixamorig_LeftLeg2" index="0"]
+transform = Transform3D(0.996258, 0.0259362, -0.0824519, -0.086417, 0.279412, -0.956275, -0.00176409, 0.959821, 0.280607, -1.73085e-06, 128.471, -3.23911e-06)
+
+[node name="mixamorig_LeftToeBase2" parent="Armature_002/mixamorig_Hips2/mixamorig_LeftUpLeg2/mixamorig_LeftLeg2/mixamorig_LeftFoot2" index="0"]
+transform = Transform3D(0.999909, -0.0123577, 0.00536915, 0.0134737, 0.91709, -0.398452, -6.47269e-08, 0.398488, 0.917174, -5.72187e-06, 53.2745, 1.90735e-06)
+
+[node name="mixamorig_RightUpLeg2" parent="Armature_002/mixamorig_Hips2" index="2"]
+transform = Transform3D(-0.995687, -0.0401912, -0.0836347, 0.0272816, -0.988289, 0.15014, -0.0886887, 0.147209, 0.985131, -25.8282, -16.9273, 1.015)
+
+[node name="mixamorig_RightLeg2" parent="Armature_002/mixamorig_Hips2/mixamorig_RightUpLeg2" index="0"]
+transform = Transform3D(0.997502, 0.0694117, -0.0131112, -0.0595827, 0.926454, 0.371661, 0.0379446, -0.369952, 0.928276, 7.06397e-06, 139.02, -5.06244e-11)
+
+[node name="mixamorig_RightFoot2" parent="Armature_002/mixamorig_Hips2/mixamorig_RightUpLeg2/mixamorig_RightLeg2" index="0"]
+transform = Transform3D(0.999314, -0.00937258, 0.0358297, 0.0370334, 0.262417, -0.964244, -0.00036487, 0.964909, 0.262584, 8.57911e-06, 128.446, -3.95578e-06)
+
+[node name="mixamorig_RightToeBase2" parent="Armature_002/mixamorig_Hips2/mixamorig_RightUpLeg2/mixamorig_RightLeg2/mixamorig_RightFoot2" index="0"]
+transform = Transform3D(0.999505, 0.0127665, 0.0287511, -3.76254e-07, 0.913954, -0.405817, -0.031458, 0.405616, 0.913502, -7.73147e-07, 52.6359, 4.44003e-05)

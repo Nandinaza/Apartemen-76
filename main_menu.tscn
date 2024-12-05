@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://cndo2608peekr"]
+[gd_scene load_steps=27 format=3 uid="uid://cndo2608peekr"]
 
 [ext_resource type="Texture2D" uid="uid://7fel2y7xppwo" path="res://Texture/UI_interface/Button_normal.png" id="1_asxoi"]
 [ext_resource type="Script" path="res://Script/UI_main_menu.gd" id="1_hl8g5"]
@@ -10,7 +10,11 @@
 [ext_resource type="Script" path="res://Script/men/BGM.gd" id="8_1dtas"]
 [ext_resource type="AudioStream" uid="uid://b1y00d1uubfx5" path="res://Audio/Burning_fire_bgm.mp3" id="8_ncuih"]
 [ext_resource type="Script" path="res://Script/men/Character_selection.gd" id="9_fmvop"]
-[ext_resource type="Texture2D" uid="uid://di20fax0book3" path="res://Texture/UI_interface/anak_panah.png" id="9_lcdmf"]
+[ext_resource type="Texture2D" uid="uid://clmpdeptlsbx1" path="res://Texture/UI_interface/anak_panah.png" id="9_lcdmf"]
+[ext_resource type="Texture2D" uid="uid://djopjg57y2e4d" path="res://Blender-3/Character/character_face/Nandi.jpg" id="10_3mu4e"]
+[ext_resource type="Texture2D" uid="uid://pv6u7wg5ssmp" path="res://Blender-3/Character/character_face/akbar.png" id="11_8kc0x"]
+[ext_resource type="Texture2D" uid="uid://csvj4uwc0gy6t" path="res://Texture/UI_interface/OK_button.png" id="11_gupem"]
+[ext_resource type="Texture2D" uid="uid://c11inqjgqlla0" path="res://Blender-3/Character/character_face/usmin.png" id="12_mb4y6"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fauyj"]
 emission_enabled = true
@@ -167,7 +171,6 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Judul Game" type="RichTextLabel" parent="Mainmenu"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -183,7 +186,6 @@ theme_override_font_sizes/normal_font_size = 125
 text = "Apartemen 76"
 
 [node name="button" type="VBoxContainer" parent="Mainmenu"]
-visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -257,6 +259,7 @@ layout_mode = 2
 text = "close"
 
 [node name="Character_selection" type="Control" parent="Mainmenu"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -264,6 +267,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("9_fmvop")
+charactr_icon = Array[Texture]([ExtResource("10_3mu4e"), ExtResource("11_8kc0x"), ExtResource("12_mb4y6")])
+
+[node name="Hero" type="TextureRect" parent="Mainmenu/Character_selection"]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 104.0
+offset_right = 521.0
+offset_bottom = 414.0
+expand_mode = 1
 
 [node name="Panel" type="Panel" parent="Mainmenu/Character_selection"]
 layout_mode = 2
@@ -273,6 +285,7 @@ offset_left = 575.0
 offset_top = 90.0
 offset_right = -57.0
 offset_bottom = -273.0
+metadata/_edit_lock_ = true
 
 [node name="Character_name" type="RichTextLabel" parent="Mainmenu/Character_selection/Panel"]
 layout_mode = 1
@@ -308,9 +321,9 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 647.0
-offset_top = 498.0
+offset_top = 543.0
 offset_right = -461.0
-offset_bottom = -40.0
+offset_bottom = -93.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("9_lcdmf")
@@ -324,9 +337,9 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 995.0
-offset_top = 503.0
+offset_top = 543.0
 offset_right = -113.0
-offset_bottom = -35.0
+offset_bottom = -95.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("9_lcdmf")
@@ -338,10 +351,20 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 193.0
+offset_left = 114.0
 offset_top = 546.0
-offset_right = -957.0
+offset_right = -883.0
 offset_bottom = -44.0
+texture_normal = ExtResource("11_gupem")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="back" type="TextureButton" parent="Mainmenu/Character_selection"]
+layout_mode = 0
+offset_left = 1152.0
+offset_top = 16.0
+offset_right = 1252.0
+offset_bottom = 104.0
 texture_normal = ExtResource("9_lcdmf")
 ignore_texture_size = true
 stretch_mode = 0
@@ -375,6 +398,8 @@ libraries = {
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.02297, 2.04548, -3.10659)
 stream = ExtResource("8_ncuih")
 
+[node name="Character_spotlight" type="Node3D" parent="."]
+
 [connection signal="pressed" from="Mainmenu/button/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Mainmenu/button/settting" to="." method="_on_settting_pressed"]
 [connection signal="pressed" from="Mainmenu/button/exit" to="." method="_on_exit_pressed"]
@@ -382,3 +407,4 @@ stream = ExtResource("8_ncuih")
 [connection signal="pressed" from="Mainmenu/Character_selection/Left" to="Mainmenu/Character_selection" method="_on_left_pressed"]
 [connection signal="pressed" from="Mainmenu/Character_selection/right" to="Mainmenu/Character_selection" method="_on_right_pressed"]
 [connection signal="pressed" from="Mainmenu/Character_selection/ok" to="." method="_on_ok_pressed"]
+[connection signal="pressed" from="Mainmenu/Character_selection/back" to="." method="_on_back_pressed"]

@@ -2,6 +2,8 @@ extends Node3D
 
 @onready var button_menu : BoxContainer = $Mainmenu/button
 @onready var setting_menu : BoxContainer = $Mainmenu/setting_menu
+@onready var JudulGame : RichTextLabel = $"Mainmenu/Judul Game"
+@onready var character_select : Control = $Mainmenu/Character_selection
 var visibility = true
 
 @onready var animation = $AnimationPlayer
@@ -32,13 +34,18 @@ func _on_exit_pressed():
 
 
 func _on_play_pressed():
-	get_tree().change_scene_to_file("res://godot-scene/Overworld.tscn")
+	#get_tree().change_scene_to_file("res://godot-scene/Overworld.tscn")
 	
-	#character_selection = !character_selection
-	#if character_selection:
-		#animation.play("camera_move")
-	#else:
-		#animation.play_backwards("camera_move")
+	character_selection = !character_selection
+	if character_selection:
+		animation.play("camera_move")
+		JudulGame.visible = false
+		button_menu.visible = false
+		character_select.visible = true
+	else:
+		animation.play_backwards("camera_move")
+		JudulGame.visible = true
+		button_menu.visible = true
 
 
 func _on_touch_screen_button_pressed():
@@ -48,3 +55,8 @@ func _on_touch_screen_button_pressed():
 
 func _on_ok_pressed():
 	get_tree().change_scene_to_file("res://godot-scene/Overworld.tscn")
+
+
+func _on_back_pressed():
+	_on_play_pressed()
+	character_select.visible = false
